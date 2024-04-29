@@ -1,17 +1,19 @@
-import React from 'react';
-import NavBar from '../ui/NavBar';
+// import NavBar from '../ui/NavBar';
 import Banner from '../ui/Banner';
 import HomePageMenu from '../ui/HomePageMenu';
 import Introduction from '../ui/Introduction';
+import Branches from '../ui/Branches';
 
 function HomePage() {
+  console.log('HomePage component rendered');
   return (
-    <div>
-      <NavBar />
+    <>
+      {/* <NavBar /> */}
       <Banner />
       <HomePageMenu />
       <Introduction />
-    </div>
+      <Branches />
+    </>
   );
 }
 
