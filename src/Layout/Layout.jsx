@@ -1,4 +1,4 @@
-import NavBar from '../ui/NavBar';
+import NavBar from './NavBar';
 import Footer from './Footer';
 
 function Layout({ children }) {

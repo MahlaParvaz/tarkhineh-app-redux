@@ -100,8 +100,9 @@ a {
 .navbar-container {
   background-color: var(--color-white);
   height: 64px;
+  z-index: 20;
   position: sticky;
-  z-index: 10;
+  top: 0;
 }
 .navbar {
   display: flex;
@@ -136,18 +137,18 @@ a {
 @media screen and (min-width: 1024px) {
   .app-container {
     max-width: 100%;
-    /* margin: 0 auto; */
   }
   .navbar-container {
-    max-width: 1440px;
     margin: auto;
     height: 75px;
   }
   .navbar {
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    margin-right: 4rem;
   }
   .navbar__menue {
     display: none;
@@ -178,8 +179,14 @@ a {
     font-size: 20px;
     color: var(--color-natural-400);
   }
+
   .navbar__items ul li {
     cursor: pointer;
+  }
+  .navbar__items ul li:hover {
+    color: var(--color-primary-700);
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-primary-700);
   }
 }
 
