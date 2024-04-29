@@ -15,7 +15,7 @@ function Banner() {
       <Swiper
         pagination={true}
         modules={[Pagination, Autoplay]}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 4000 }}
         className="swiper"
       >
         <SwiperSlide
