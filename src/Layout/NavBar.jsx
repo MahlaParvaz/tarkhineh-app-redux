@@ -19,7 +19,7 @@ function NavBar() {
           <Logo />
         </div>
         <div className="navbar__items">
-          <ul className='items'>
+          <ul className="items">
             <li>صفحه اصلی</li>
             <li>شعبه</li>
             <li>منو</li>
