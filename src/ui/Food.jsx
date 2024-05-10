@@ -1,20 +1,11 @@
-import React from 'react';
-import { toPersianNumbersWithComma } from '../utils/toPersianNumbersWithComma';
+import FoodCard from './FoodCard';
 
 function Food({ productData }) {
-  const { title, price, offer, discountedPrice, description, image, slug, id } =
-    productData;
   return (
-    <div>
-      <div className="foods__card">
-        <div className="card__header">
-          <span>{title}</span>
-          <div className='card__header-price'>
-            <span>{toPersianNumbersWithComma(price)}</span>
-            <span>%{toPersianNumbersWithComma(offer)}</span>
-          </div>
-        </div>
-      </div>
+    <div className="products-grid">
+      {productData.map((product) => (
+        <FoodCard productData={product} key={product.id} />
+      ))}
     </div>
   );
 }
