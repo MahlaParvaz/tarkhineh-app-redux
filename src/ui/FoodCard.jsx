@@ -31,19 +31,11 @@ export const ratingDesktop = {
 };
 
 function FoodCard({ productData }) {
-  const {
-    title,
-    price,
-    offer,
-    discountedPrice,
-    description,
-    image,
-    slug,
-    id,
-    category,
-  } = productData;
+  const { title, price, offer, discountedPrice, description, image, slug, id } =
+    productData;
   const state = useSelector((state) => state.cart);
   const dispatch = useDispatch();
+  
   const addToCart = () => {
     if (isInCart) {
       dispatch(addItem(productData));

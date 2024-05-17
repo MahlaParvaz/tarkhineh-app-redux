@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import {
   CartIcon,
   CartIconDesktop,
@@ -29,15 +30,22 @@ function NavBar() {
           </ul>
         </div>
         <div className="navbar__icons">
-          <span className="icon__search">
-            <SearchIconDesktop />
-          </span>
-          <span className="icon__card">
-            <CartIconDesktop />
-          </span>
-          <span className="icon__user">
-            <UserIconDesktop />
-          </span>
+          <Link>
+            <span className="icon__search">
+              <SearchIconDesktop />
+            </span>
+          </Link>
+
+          <Link to="/cart">
+            <span className="icon__card">
+              <CartIconDesktop />
+            </span>
+          </Link>
+          <Link>
+            <span className="icon__user">
+              <UserIconDesktop />
+            </span>
+          </Link>
         </div>
       </div>
     </div>

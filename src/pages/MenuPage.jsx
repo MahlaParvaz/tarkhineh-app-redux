@@ -64,7 +64,7 @@ function MenuPage() {
       <div className="foods-container ">
         <div className="foods-cards">
           {filteredProducts.map((products, index) => (
-            <div className='foods-card' key={index}>
+            <div className="foods-card" key={index}>
               <h3>{categories[index]}</h3>
               <Food productData={products} />
             </div>

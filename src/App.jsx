@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import Layout from './Layout/Layout';
 import MenuPage from './pages/MenuPage';
 import { Toaster } from 'react-hot-toast';
+import CartPage from './pages/CartPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/menu" element={<MenuPage />} />
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
       </Layout>
     </div>
